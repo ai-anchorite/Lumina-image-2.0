@@ -4,7 +4,7 @@ import random
 import gc
 import json
 import torch
-import spaces
+# import spaces
 
 from diffusers.pipelines import Lumina2Text2ImgPipeline
 from diffusers.models.transformers.transformer_lumina2 import Lumina2Transformer2DModel
@@ -50,7 +50,7 @@ pipe.to(device, torch_dtype)
 MAX_SEED = np.iinfo(np.int32).max
 MAX_IMAGE_SIZE = 1536
 
-@spaces.GPU(duration=60)
+# @spaces.GPU(duration=60)
 def infer(
     prompt,
     negative_prompt="",
