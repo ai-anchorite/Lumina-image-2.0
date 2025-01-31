@@ -1,0 +1,7 @@
+#torch
+accelerate
+safetensors
+transformers
+sentencepiece
+git+https://github.com/painebenjamin/diffusers.git@lumina2
+scipy
